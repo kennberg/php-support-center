@@ -1,0 +1,110 @@
+html, body {
+  font-family: "Helvetica Neue","HelveticaNeueLT Std","Segoe UI","Nimbus Sans L","Liberation Sans","Open Sans",FreeSans,Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  min-height: 100%;
+}
+
+body {
+  background: #FFF url(data:image/png;base64,R0lGODlhLAEBAJEAAPX19e3t7e7u7gAAACH5BAAAAAAALAAAAAAsAQEAAAIQjI6py+0Po5y02ouz3nyDAgA7) repeat-y 0 0;
+}
+
+a {
+  font-family: "Helvetica Neue","HelveticaNeueLT Std","Segoe UI","Nimbus Sans L","Liberation Sans","Open Sans",FreeSans,Helvetica,Arial,sans-serif;
+  color: #4C6296;
+  text-decoration: none;
+}
+a:hover {
+  color: #6C82B6;
+  text-decoration: none;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  min-height: 100%;
+}
+
+.page-content {
+  min-height: 100%;
+  margin-left: 320px;
+}
+
+header {
+  margin: 0 2em;
+}
+nav {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+nav a {
+  display: block;
+  margin-top: 0.5em;
+}
+
+nav > .title {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.page {
+  min-height: 100%;
+}
+
+.header {
+}
+
+.article {
+  padding: 2em;
+}
+
+.article > .content {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.helpful,
+.related {
+  margin-top: 2em;
+}
+
+.helpful > .title,
+.related > .title {
+  font-weight: bold;
+}
+
+.helpful > .content {
+  margin-top: 0.5em;
+}
+
+.helpful a {
+  margin-right: 1.0em;
+}
+
+.related a {
+  display: block;
+  margin-top: 0.5em;
+}
+
+.footer {
+  color: #AAA;
+  margin: 2em 0;
+  padding-top: 0.5em;
+  border-top: 1px solid #eee;
+  font-size: 80%;
+}
+
+@media (max-width:768px) {
+  body {
+    background: #FFF;
+  }
+  .sidebar {
+    position: relative;
+  }
+  .page-content {
+    margin-left: 10px;
+  }
+}
+
