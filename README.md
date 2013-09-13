@@ -19,19 +19,21 @@ Or, for installation inside your server directory:
 
     git clone https://github.com/kennberg/php-support-center support
 
-To add a new article:
+To add a new article make sure the category exists first by creating a directory, then create a corresponding PHP file. For consistency, separate words with dashes (-) in the directories and filenames. For example:
 
     cd php-support-center
     mkdir -p articles/example
     vim articles/example/first-article.php
 
-You should also add this article to the whitelist:
+You should also add the new category and article to the visibility whitelist:
 
     vim articles/visible.php
 
-Template for the article is located in the "templates" folder.
+Template for the article is located in the "templates" folder, which contains configuration for your Swiftype and Google Analytics IDs.
 
-All the media such as CSS, images for the articles and so on are located in "media" folder.
+All the media such as CSS and images for the articles are located in the "media" folder. They can be referenced in the article with the "media/" prefix:
+
+    <img src="media/do-it-yourself.png" />
 
 Advanced info
 ======================
