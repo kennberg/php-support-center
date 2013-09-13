@@ -40,14 +40,14 @@ You should modify your ".htaccess" in "www" folder for Apache to rewrite all the
 
     # Mapping for subdomain suh as support.yourdomain.com
     RewriteCond ${lowercase:%{SERVER_NAME}}               ^support\.yourdomain\.com
-    RewriteRule media/(.*)$                               support/media/$1 [L] 
+    RewriteRule media/(.*)$                               media/$1 [L] 
 
     RewriteCond ${lowercase:%{SERVER_NAME}}               ^support\.yourdomain\.com
-    RewriteRule ^.*$                                      support/index.php [L] 
+    RewriteRule ^.*$                                      index.php [L] 
 
-    # Mapping for path with /support/
-    RewriteRule support/.*media/(.*)                      support/media/$1 [L] 
-    RewriteRule support/                                  support/index.php [L] 
+    # Mapping for direct use without custom subdomain
+    RewriteRule media/(.*)$                               media/$1 [L] 
+    RewriteRule ^.*$                                      index.php [L] 
 
 License
 ======================

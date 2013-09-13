@@ -88,7 +88,7 @@ foreach ($visible_articles as $visible_category_path => $visible_category) {
       }
       ?>
 
-      <?php if (!@$article['search_results']): ?>
+      <?php if ($short_path != 'index/index' && $short_path != 'search/index'): ?>
       <section>
         <div class="helpful">
           <div class="title">Was this article helpful?</div>
@@ -121,7 +121,7 @@ foreach ($visible_articles as $visible_category_path => $visible_category) {
     Swiftype.inputElement = '#st-search-input';
     Swiftype.resultContainingElement = '#st-results-container';
     Swiftype.attachElement = '#st-search-input';
-    Swiftype.renderStyle = '<?=@$article['search_results'] ? 'inline' : 'new_page' ?>';
+    Swiftype.renderStyle = '<?=$short_path == 'search/index' ? 'inline' : 'new_page' ?>';
 
     Swiftype.resultPageURL = '/search';
 

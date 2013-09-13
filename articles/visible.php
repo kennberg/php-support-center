@@ -14,7 +14,7 @@ $visible_articles = array(
   'example2' => array(
     'title' => 'Example 2',
     'articles' => array(
-      'second-article' => 'Second Article',
+      'second-article' => 'Second article',
     )
   ),
 

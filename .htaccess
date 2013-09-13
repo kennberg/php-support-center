@@ -1,0 +1,12 @@
+RewriteEngine on
+
+# Mapping for subdomain suh as support.yourdomain.com
+RewriteCond ${lowercase:%{SERVER_NAME}}               ^support\.yourdomain\.com
+RewriteRule media/(.*)$                               media/$1 [L] 
+
+RewriteCond ${lowercase:%{SERVER_NAME}}               ^support\.yourdomain\.com
+RewriteRule ^.*$                                      index.php [L] 
+
+# Mapping for direct use without custom subdomain
+RewriteRule media/(.*)$                               media/$1 [L] 
+RewriteRule ^.*$                                      index.php [L] 

@@ -7,6 +7,6 @@ $article = array(
 
 ?>
 <p>
-This article has no related articles.
+This second article has no related articles and is meant to be short.
 </p>
 

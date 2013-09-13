@@ -2,7 +2,6 @@
 
 $article = array(
   'title' => 'Search',
-  'search_results' => true,
 );
 
 ?>
