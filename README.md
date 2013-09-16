@@ -1,11 +1,20 @@
 php-support-center
 ======================
 
-Support center for the minimalist. Generates a beautiful, responsive support center with advanced search and analytics. It is search friendly and you can deep link into articles.
+Support center for the minimalist. Generates a beautiful, responsive knowledge base with advanced search and analytics. It is search friendly and you can deep link into articles.
 
 The support center uses Swiftype.com for searching, which allows you to index a subdomain such as support.shopstarter.com and it shows you what people are searching for, but do not find! For analytics, it uses Google Analytics and generates events when visitors report article as helpful, not helpful, or incorrect. The last dependency is on Normalize CSS hosted by Yahoo's CDN. With only these few dependencies you don't need to create any SQL tables.
 
 View live demo here: http://support.shopstarter.com
+
+Features
+======================
+
+* Powerful search using Swiftype (discover what people are not finding!)
+* Reports articles helpful, not helpful or incorrect using Google Analytics events
+* Google Analytics for detailed usage reports
+* Minimalist: only 3 dependencies, written in PHP without need for database
+* Responsive layout works on mobile and desktop
 
 How to use
 ======================
